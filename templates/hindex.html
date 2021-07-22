@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="static/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="menu">
+          <h3 class="logo">LIN<span>Ware</span></h3>
+          <div class="hamburger-menu">
+            <div class="bar"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-container">
+        <div class="main">
+          <header>
+            <div class="overlay">
+              <div class="inner">
+                <h2 class="title">Home</h2>               
+                
+              </div>
+
+              <div class="transparentBox">
+                <h1>Choose The OS</h1>
+
+                <div class="container-box">
+                  <div class="form-box">
+                    <form>
+                    <label>
+                       <input type="radio" name="imagename" value="redhat">
+                       <div class="circle"></div>
+                       <span>RedHat Linux 8</span>
+                    </label>
+                    <label>
+                       <input type="radio" name="imagename" value="centos">
+                       <div class="circle"></div>
+                       <span>CentOS</span>
+                    </label>
+                    <label>
+                       <input type="radio" name="imagename" value="ubuntu">
+                       <div class="circle"></div>
+                       <span>Ubuntu</span>
+                    </label>
+
+                    <label>
+                      <button formaction="/image"  type="submit" class="btn1 solid">Submit</button>
+                    </label>
+                  </form>
+                 </div>
+                </div>
+          
+            
+              </div>
+            </div>
+          </header>
+        </div>
+
+        <div class="shadow one"></div>
+        <div class="shadow two"></div>
+      </div>
+
+      <div class="links">
+        <ul>
+          <li>
+            <a href="/navi_home" style="--i: 0.05s;" id="home" >Home</a>
+          </li>          
+          <li>
+            <a href="/navi_aboutus" style="--i: 0.25s;" id="aboutus" >About Us</a>
+          </li>
+          <li>
+            <a href="/navi_team" style="--i: 0.3s;" id="team" >Meet The Team</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
+    
+    
+    
+
+    <script src="static/happ.js"></script>
+  </body>
+</html>

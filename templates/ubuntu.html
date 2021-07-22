@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/ubuntu.css">
+    <title>Ubuntu</title>
+    
+</head>
+<body>
+ <form>
+     <img src="static/img/ubuntu.png" width="250" height="170">
+     <div id="sqr">
+        <label>
+            <button id="demo" type="submit" class="btn1" formaction="/selector">Back</button>
+        </label>
+     </div>
+ </form>
+ <form>
+     <div class="square"></div>
+
+
+     <h2>Choose The Command</h2>
+
+     <div class="form-box">
+        <label>
+           <input type="radio" value="date" name="cmdname">
+           <div class="circle"></div>
+           <span>Today's Date</span>
+        </label>
+        <label>
+           <input type="radio" value="ls" name="cmdname">
+           <div class="circle"></div>
+           <span>list in present directory</span>
+        </label>
+        <label>
+           <input type="radio" value="ifconfig" name="cmdname">
+           <div class="circle"></div>
+           <span>IP of System</span>
+        </label>
+        <label>
+            <input type="radio" value="free -l" name="cmdname">
+            <div class="circle"></div>
+            <span>Free Memory</span>
+         </label>
+         <label>
+            <input type="radio" value="df" name="cmdname">
+            <div class="circle"></div>
+            <span>Info. about Hard Disk</span>
+         </label>
+    </div> 
+     <button formaction="http://192.168.43.12/cgi-bin/ubuntu.py?cmdname=${cmdname}" id="demo" type="submit" class="btn4 solid">Submit</button> 
+ </form>
+ <form>  
+ 
+        <div class="square"></div>
+        
+        <div class="h4">
+            <h3>Enter The Manual Command</h3>
+        </div>
+        
+    
+        <div class="form-box">          
+            <textarea name="cmdname" rows="10" cols="30" placeholder="Enter a Command" ></textarea>
+        </div> 
+        
+        <button formaction="http://192.168.43.12/cgi-bin/ubuntu.py?cmdname=${cmdname}" id="demo" type="submit" class="btn4 solid">Submit</button>       
+ </form>
+ 
+
+</body>
+</html>
+

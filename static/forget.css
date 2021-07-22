@@ -1,0 +1,87 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background: #e4e4e4;
+}
+
+.form-container {
+    display: flex;
+    height: 98vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;    
+    background: linear-gradient(145deg, #4da7db, #5bc6ff);   
+    
+}
+
+.form-container .form-wrap {    
+    width: 40%;
+    padding: 15px 20px;
+    border-radius: 30px;
+    background: linear-gradient(145deg, #4da7db, #5bc6ff);
+    box-shadow:  19px 19px 38px #418ebb,
+                -19px -19px 38px #69e4ff;   
+    
+}
+
+.form-container .form-wrap h2 {
+    text-align: center;
+    margin: 0px 0px 20px;
+    font-size: 19px;
+}
+
+.form-container .form-wrap .form-box {
+    margin: 0px 0px 15px;
+}
+
+.form-container .form-wrap .form-box input[type="email"]{
+    padding: 5px 8px;
+    border-radius: 25px;    
+    border: 1px solid white;
+    width: 100%;
+    border-radius: 25px;
+}
+
+.form-container .form-wrap .form-box input[type="password"]{
+    padding: 5px 8px;
+    border-radius: 25px;    
+    border: 1px solid white;
+    width: 100%;
+    border-radius: 25px;
+}
+
+.form-container .form-wrap .form-submit {
+    display: flex;
+    justify-content: center;
+}
+
+
+.form-container .form-wrap .form-submit input[type="submit"] {
+    padding: 4px 10px;    
+    border-radius: 20px;
+    border: none;
+    background: #6345eb ;
+    color: #fff;
+    font-weight: 800;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.submit{    
+    
+    padding: 4px 10px;    
+    border-radius: 20px;
+    border: none;
+    background: #6345eb ;
+    color: #fff;
+    font-weight: 800;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+

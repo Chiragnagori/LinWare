@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/redhat.css">
+    <title>RedHat Linux 8</title>
+    
+</head>
+<body>
+ <form >
+     <img src="static/img/redhat.png" width="250" height="150">
+     <div id="sqr">
+        <label>
+            <button id="demo" type="submit" class="btn1" formaction="/selector" >Back</button>
+        </label>
+     </div>
+ </form>
+ <form>
+     <h2>Choose The Command</h2>
+
+     <div class="form-box">
+        <label>
+           <input type="radio" value="ifconfig" name="cmdname">
+           <div class="circle"></div>
+           <span>IP Of Your System</span>
+        </label>
+        <label>
+           <input type="radio" value="cal" name="cmdname">
+           <div class="circle"></div>
+           <span>Current Month Calander</span>
+        </label>
+        <label>
+           <input type="radio" value="free -l" name="cmdname">
+           <div class="circle"></div>
+           <span>Free RAM Of System</span>
+        </label>
+
+        
+        <button formaction="http://192.168.43.12/cgi-bin/web.py?cmdname=${cmdname}" type="submit" class="btn2 solid">Submit</button>
+ </form>    
+ 
+ <form>
+        <div class="box">            
+            <h2>Enter The Command Manually</h2>
+            <textarea name="cmdname" rows="10" cols="30" placeholder="Enter a Command" ></textarea>
+        </div>
+
+        <button formaction="http://192.168.43.12/cgi-bin/web.py?cmdname=${cmdname}" type="submit" class="btn3 solid">Submit</button>
+        
+ </form>
+    
+
+
+</body>
+</html>
+
