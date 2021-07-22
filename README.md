@@ -1,1 +1,1 @@
-# LinWare
+# LinWare - Online Linux Server
