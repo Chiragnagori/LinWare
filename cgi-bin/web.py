@@ -12,3 +12,7 @@ output = subprocess.getstatusoutput("sudo "+myx)
 status = output[0]
 myout = output[1]
 print(myout)
+
+
+----------------------------------------------
+This is RHEL8 file
